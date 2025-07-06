@@ -8,7 +8,6 @@ import json
 from dotenv import load_dotenv
 import pymupdf
 from google import genai
-from frontend import app
 from google.genai import types
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -42,8 +41,9 @@ if st.button('处理PDF并进行RAG流程'):
         with st.spinner("Please wait......"):
             client = genai.Client(api_key=api_key)
             pdf_bytes = upload_file.getvalue()
+
             st.write("The answer is :")
-            pdf_text = main.extract_text(upload_file)
+            pdf_text = main.extract_text(pdf_bytes)
             pdf_chunks = main.divide_pdf_to_chunks(pdf_text)
             chunks_embedding = main.vector_chunks_embedding(pdf_chunks, client)
             ans = main.semantic_search(client, query, pdf_chunks, chunks_embedding)
