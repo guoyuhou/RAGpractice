@@ -55,7 +55,7 @@ def divide_pdf_to_chunks(pdf_text):
 
 # 3. Gemini init
 # 4. Text block create embed
-def vector_chunks_embedding(chunks, client=genai.Client):
+def vector_chunks_embedding(chunks, client: genai.Client):
     """
     Args:
     chunks(List[str]): The divided chunks which in list
