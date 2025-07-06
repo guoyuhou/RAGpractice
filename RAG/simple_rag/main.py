@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 import pymupdf
 from google import genai
 from google.genai import types
+from openai import OpenAI
+
 
 """
 RAD总览
@@ -63,11 +65,13 @@ def vector_chunks_embedding(chunks, client: genai.Client):
     return:
     List(vector)
     """ 
-    response = client.models.embed_content(
-        model = 'gemini-embedding-exp-03-07',
-        contents = chunks
+    response = client.embeddings.create(
+        model = "text-embedding-v4",
+        input = chunks,
+        dimensions=1024,
+        encoding_format="float"
         ) 
-    return response.embeddings
+    return response.model_dump_json()
         
 
     
@@ -97,10 +101,11 @@ def semantic_search(client: genai.Client, query, pdf_chunks, chunks_embeddings, 
 
     Function: 对提取到的文本进行按照prompt,根据不同chunk的embedding的值进行查找。
     """
-    query_embedding_response = client.models.embed_content(
-        model = "gemini-embedding-exp-03-07",
-        contents  = query,
-        config=types.EmbedContentConfig(task_type="SEMANTIC_SIMILARITY")
+    query_embedding_response = client.embeddings.create(
+        model = "text-embedding-v4",
+        input  = query,
+        dimensions=1024, 
+        encoding_format="float"
         )
     query_embedding = query_embedding_response.embeddings
     similarity_scores = []
