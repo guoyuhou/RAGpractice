@@ -55,7 +55,7 @@ def divide_pdf_to_chunks(pdf_text):
 
 # 3. Gemini init
 # 4. Text block create embed
-def vector_chunks_embedding(chunks):
+def vector_chunks_embedding(chunks, client=genai.Client):
     """
     Args:
     chunks(List[str]): The divided chunks which in list
@@ -63,7 +63,7 @@ def vector_chunks_embedding(chunks):
     return:
     List(vector)
     """
-    response = genai.embed_content(
+    response = client.models.embed_content(
         model = 'gemini-embedding-exp-03-07',
         content = chunks
         ) 
@@ -83,7 +83,7 @@ def cosine_similar(vector1, vector2):
     function: Sort
     """
     return np.dot(vector1, vector2) / (np.linalg.norm(vector1) * np.linalg.norm(vector2))
-def semantic_search(client: genai.Client,   query, pdf_chunks, chunks_embeddings, k=5):
+def semantic_search(client: genai.Client, query, pdf_chunks, chunks_embeddings, k=5):
     """
     Args:
     chunks_embedding(List[dict]): the embeddings of different chunks
