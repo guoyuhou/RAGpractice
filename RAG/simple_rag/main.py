@@ -4,7 +4,10 @@ import numpy as np
 import json
 from openai import OpenAI
 from dotenv import load_dotenv
-
+import pymupdf
+from google import genai
+from frontend import app
+from google.genai import types
 
 """
 RAD总览
@@ -16,7 +19,7 @@ RAD总览
 """
 
 # 1. Extract text from pdf
-def extract_text(pdf_path):
+def extract_text(pdf):
     """
     Args:
     pdf_path(str): pdf link
@@ -24,7 +27,12 @@ def extract_text(pdf_path):
     Returns:
     str: pdf text
     """
-    pdf_text = 
+    full_text = ""
+    with pymupdf.open(stream=pdf, filetype='pdf') as pdf:
+        for page in pdf:
+            text = page.get_text()
+            full_text += text
+    return full_text
 
 
 
@@ -37,7 +45,74 @@ def divide_pdf_to_chunks(pdf_text):
     Return:
     List[str]: Every chunks from pdf
     """
+    max_length = 2000
+    pdf_chunks = []
+    for i in range(0, len(pdf_text), max_length):
+        chunk = pdf_text[i : i + max_length]
+        pdf_chunks.append(chunk)
+
     return pdf_chunks
 
-# 3. Load the OpenAI client.
-def 
+
+# 3. Gemini init
+client = genai.Client(api_key=app.api_key)
+
+# 4. Text block create embed
+def vector_chunks_embedding(chunks):
+    """
+    Args:
+    chunks(List[str]): The divided chunks which in list
+
+    return:
+    List(vector)
+    """
+    response = genai.embed_content(
+        model = 'gemini-embedding-exp-03-07',
+        content = chunks
+        ) 
+    return response.embeddings
+        
+
+    
+# 5. semantic_search
+def cosine_similar(vector1, vector2):
+    """
+    Args:
+    vector_chunks: The different vector chunks value in the chunks.
+
+    return:
+    List[int]
+
+    function: Sort
+    """
+    return np.dot(vector1, vector2) / (np.linalg.norm(vector1) * np.linalg.norm(vector2))
+def semantic_search(query, pdf_chunks, chunks_embeddings, k=5):
+    """
+    Args:
+    chunks_embedding(List[dict]): the embeddings of different chunks
+    pdf_chunks(List[str]): the text from pdf_chunks
+    query(str): the prompt from someone
+    k(int): 
+
+
+    return:
+    List[int]
+
+    Function: 对提取到的文本进行按照prompt,根据不同chunk的embedding的值进行查找。
+    """
+    query_embedding_response = client.models.embed_content(
+        model = "gemini-embedding-exp-03-07",
+        content  = query,
+        config=types.EmbedContentConfig(task_type="SEMANTIC_SIMILARITY")
+        )
+    query_embedding = query_embedding_response.embeddings
+    similarity_scores = []
+    for i, chunks_embedding in enumerate(chunks_embeddings):
+        score = cosine_similar(np.array(query_embedding), np.array(chunks_embedding))
+        similarity_scores.append((i, score))
+
+    similarity_scores.sort(key=lambda x: x[1], reverse=True)
+    top_indices = [index for index, _ in similarity_scores[:k]]
+
+    return [pdf_chunks[index] for index in top_indices]
+
