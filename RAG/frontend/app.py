@@ -45,8 +45,8 @@ if st.button('处理PDF并进行RAG流程'):
             st.write("The answer is :")
             pdf_text = main.extract_text(upload_file)
             pdf_chunks = main.divide_pdf_to_chunks(pdf_text)
-            chunks_embedding = main.vector_chunks_embedding(pdf_chunks)
-            ans = main.semantic_search(query, pdf_chunks, chunks_embedding)
+            chunks_embedding = main.vector_chunks_embedding(pdf_chunks, client)
+            ans = main.semantic_search(client, query, pdf_chunks, chunks_embedding)
 
             st.write(ans)
 
