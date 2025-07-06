@@ -71,7 +71,9 @@ def vector_chunks_embedding(chunks, client: genai.Client):
         dimensions=1024,
         encoding_format="float"
         ) 
-    return response.model_dump_json()
+    embeddings = [record.embedding for record in response.data]
+
+    return embeddings
         
 
     
@@ -107,7 +109,7 @@ def semantic_search(client: genai.Client, query, pdf_chunks, chunks_embeddings, 
         dimensions=1024, 
         encoding_format="float"
         )
-    query_embedding = query_embedding_response.embeddings
+    query_embedding = query_embedding_response.embeddings.data[0].embedding
     similarity_scores = []
     for i, chunks_embedding in enumerate(chunks_embeddings):
         score = cosine_similar(np.array(query_embedding), np.array(chunks_embedding))
