@@ -6,7 +6,6 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import pymupdf
 from google import genai
-from frontend import app
 from google.genai import types
 
 """
@@ -55,8 +54,6 @@ def divide_pdf_to_chunks(pdf_text):
 
 
 # 3. Gemini init
-client = genai.Client(api_key=app.api_key)
-
 # 4. Text block create embed
 def vector_chunks_embedding(chunks):
     """
@@ -86,7 +83,7 @@ def cosine_similar(vector1, vector2):
     function: Sort
     """
     return np.dot(vector1, vector2) / (np.linalg.norm(vector1) * np.linalg.norm(vector2))
-def semantic_search(query, pdf_chunks, chunks_embeddings, k=5):
+def semantic_search(client: genai.Client,   query, pdf_chunks, chunks_embeddings, k=5):
     """
     Args:
     chunks_embedding(List[dict]): the embeddings of different chunks

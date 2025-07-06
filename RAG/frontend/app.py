@@ -2,14 +2,6 @@
 import streamlit as st
 import sys
 import os
-
-current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.dirname(current_dir)
-sys.path.insert(0, project_root)
-
-from simple_rag import main
-from google import genai
-
 import fitz
 import numpy as np
 import json
@@ -19,8 +11,11 @@ from google import genai
 from frontend import app
 from google.genai import types
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(current_dir)
+sys.path.insert(0, project_root)
 
-
+from simple_rag import main
 
 
 st.title("RAG")
@@ -45,6 +40,7 @@ if st.button('处理PDF并进行RAG流程'):
         st.error('请输入问题')
     else:
         with st.spinner("Please wait......"):
+            client = genai.Client(api_key=api_key)
             pdf_bytes = upload_file.getvalue()
             st.write("The answer is :")
             pdf_text = main.extract_text()
