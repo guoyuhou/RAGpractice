@@ -8,9 +8,6 @@ st.subheader('刘曜畅2025.7.6')
 # gemini init
 
 
-if "rag_chain" not in st.session_state:
-    st.session_state = None
-
 api_key = st.text_input("请输入你的API_key", type='password')
 prompt = st.text_input("请输入你的问题", type='default')
 upload_file = st.file_uploader('请上传你的PDF文件.', type='pdf')
