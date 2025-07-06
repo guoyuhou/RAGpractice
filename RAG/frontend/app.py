@@ -10,6 +10,15 @@ sys.path.insert(0, project_root)
 from simple_rag import main
 from google import genai
 
+import fitz
+import numpy as np
+import json
+from dotenv import load_dotenv
+import pymupdf
+from google import genai
+from frontend import app
+from google.genai import types
+
 
 
 
