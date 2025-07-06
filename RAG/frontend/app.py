@@ -1,13 +1,17 @@
 # Strealit app
 import streamlit as st
-from simple_rag import main
-from google import genai
-import os
 import sys
+import os
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(current_dir)
 sys.path.insert(0, project_root)
+
+from simple_rag import main
+from google import genai
+
+
+
 
 
 st.title("RAG")
