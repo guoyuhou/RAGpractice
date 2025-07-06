@@ -2,6 +2,8 @@
 import streamlit as st
 from simple_rag import main
 from google import genai
+import os
+
 st.title("RAG")
 st.subheader('刘曜畅2025.7.6')
 
