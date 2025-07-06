@@ -3,6 +3,12 @@ import streamlit as st
 from simple_rag import main
 from google import genai
 import os
+import sys
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(current_dir)
+sys.path.insert(0, project_root)
+
 
 st.title("RAG")
 st.subheader('刘曜畅2025.7.6')
