@@ -65,7 +65,7 @@ def vector_chunks_embedding(chunks, client: genai.Client):
     """
     response = client.models.embed_content(
         model = 'gemini-embedding-exp-03-07',
-        content = chunks
+        contents = chunks
         ) 
     return response.embeddings
         
@@ -99,7 +99,7 @@ def semantic_search(client: genai.Client, query, pdf_chunks, chunks_embeddings, 
     """
     query_embedding_response = client.models.embed_content(
         model = "gemini-embedding-exp-03-07",
-        content  = query,
+        contents  = query,
         config=types.EmbedContentConfig(task_type="SEMANTIC_SIMILARITY")
         )
     query_embedding = query_embedding_response.embeddings
