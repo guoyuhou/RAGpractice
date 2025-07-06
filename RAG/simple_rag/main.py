@@ -62,7 +62,7 @@ def vector_chunks_embedding(chunks, client: genai.Client):
 
     return:
     List(vector)
-    """
+    """ 
     response = client.models.embed_content(
         model = 'gemini-embedding-exp-03-07',
         contents = chunks
