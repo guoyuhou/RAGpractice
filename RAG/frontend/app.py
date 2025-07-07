@@ -51,4 +51,8 @@ if st.button('处理PDF并进行RAG流程'):
 
             st.write(ans)
 
+            st.write('Answer:')
+            ai_answer = main.generate_response(client, ans, query)
+            st.write(ai_answer)
+
 

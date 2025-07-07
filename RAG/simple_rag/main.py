@@ -125,3 +125,15 @@ def semantic_search(client: genai.Client, query, pdf_chunks, chunks_embeddings, 
 
     return [pdf_chunks[index] for index in top_indices]
 
+# 6 Finally answer the question based on rag=text
+def generate_response(client: genai.Client, text ,query):
+    prompt = f'{"你是一个AI助手，严格根据给定的上下文进行回答。如果无法直接从提供的上下文中得出答案，请回复：'我没有足够的信息来回答这个问题。'"}, 上下文：{text}'
+    response = client.chat.completions.create(
+        model='qwen-plus',
+        messages=[
+            {'role': 'system', 'content': prompt},
+            {'role': 'user', 'content': query}
+        ]
+    )
+    return response.choices[0].message.content
+
