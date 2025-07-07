@@ -23,7 +23,7 @@ st.subheader('刘曜畅2025.7.6')
 
 
 
-api_key = st.text_input("请输入你的API_key", type='password')
+api_key_str = st.text_input("请输入你的API_key", type='password')
 prompt = st.text_input("请输入你的问题", type='default')
 upload_file = st.file_uploader('请上传你的PDF文件.', type='pdf')
 
@@ -39,7 +39,7 @@ if st.button('处理PDF并进行RAG流程'):
         st.error('请输入问题')
     else:
         with st.spinner("Please wait......"):
-            client = OpenAI(api_key=api_key,
+            client = OpenAI(api_key=api_key_str,
                                   base_url="https://dashscope.aliyuncs.com/compatible-mode/v1")
             pdf_bytes = upload_file.getvalue()
 
