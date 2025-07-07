@@ -77,7 +77,7 @@ def vector_chunks_embedding(chunks, client: genai.Client):
         )     
         
         batch_embeddings = [record.embedding for record in response.data]
-        all_embedding.append(batch_embeddings)
+        all_embedding.extend(batch_embeddings)
     return all_embedding
         
 
