@@ -52,7 +52,7 @@ def divide_pdf_to_chunks(pdf_text):
         chunk = pdf_text[i : i + max_length]
         pdf_chunks.append(chunk)
     return pdf_chunks
-def split_chunks(pdf_chunks, batch_size=10):
+def split_chunks(pdf_chunks, batch_size=9):
     return [pdf_chunks[i : i + batch_size] for i in range(0, len(pdf_chunks), batch_size)]
 
 
