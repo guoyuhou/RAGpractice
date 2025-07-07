@@ -31,7 +31,7 @@ query = prompt
 
 
 if st.button('处理PDF并进行RAG流程'):
-    if not api_key:
+    if not api_key_str:
         st.error("请输入api密钥")
     elif not upload_file:
         st.error("请上传文件")
