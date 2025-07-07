@@ -21,7 +21,6 @@ from simple_rag import main
 st.title("RAG")
 st.subheader('刘曜畅2025.7.6')
 
-# gemini init
 
 
 api_key = st.text_input("请输入你的API_key", type='password')
@@ -40,7 +39,7 @@ if st.button('处理PDF并进行RAG流程'):
         st.error('请输入问题')
     else:
         with st.spinner("Please wait......"):
-            client = genai.Client(api_key=api_key,
+            client = OpenAI(api_key=api_key,
                                   base_url="https://dashscope.aliyuncs.com/compatible-mode/v1")
             pdf_bytes = upload_file.getvalue()
 
