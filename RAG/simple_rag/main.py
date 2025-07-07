@@ -51,8 +51,10 @@ def divide_pdf_to_chunks(pdf_text):
     for i in range(0, len(pdf_text), max_length):
         chunk = pdf_text[i : i + max_length]
         pdf_chunks.append(chunk)
-
     return pdf_chunks
+def split_chunks(pdf_chunks, batch_size=10):
+    return [pdf_chunks[i : i + batch_size] for i in range(0, len(pdf_chunks), batch_size)]
+
 
 # 4. Text block create embed
 def vector_chunks_embedding(chunks, client: genai.Client):
@@ -63,15 +65,20 @@ def vector_chunks_embedding(chunks, client: genai.Client):
     return:
     List(vector)
     """ 
-    response = client.embeddings.create(
+    all_embedding = []
+    batch_chunks = split_chunks(chunks)
+
+    for i, batch in enumerate(batch_chunks):
+        response = client.embeddings.create(
         model = "text-embedding-v4",
-        input = chunks,
+        input = batch,
         dimensions=1024,
         encoding_format="float"
-        ) 
-    embeddings = [record.embedding for record in response.data]
-
-    return embeddings
+        )     
+        
+        batch_embeddings = [record.embedding for record in response.data]
+        all_embedding.append(batch_embeddings)
+    return all_embedding
         
 
     
