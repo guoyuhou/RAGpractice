@@ -1,0 +1,13 @@
+---
+title: "OCR_compare"
+author: "Diary"
+date: "2025-07-09"
+output: html_document
+---
+# Draw the barplot of different OCR model
+
+```{r}
+dataset <- read.csv("")
+
+```
+
