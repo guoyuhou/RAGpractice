@@ -29,9 +29,8 @@ This repository was created to rewrite RAG
 ## PyMuPDF、MistralOCR、OCRFlux 在OmniDocBench上的测试(2025.7.8)
 
 比较了不同OCR模型的parser效果。
-- **parser/code:** 测试代码及处理后的markdown文档集
-- **OmniDocBench:** OmniDocBench测试
-- **OmniDocBench_Dateset:** OmniDocBench测试集
+- **parser/code:** 测试代码
+
 
 **问题：**OCRFlux-3B模型文档上12GB的显存即可，但是实际上RTX3090 24GB的显存刚刚好。使用官方的ocrflux.pipeline的高度封装工具无法对GPU的资源参数进行设置，导致显存溢出而崩溃。因而重新写一个简单脚本进行运行即可泡桐
 

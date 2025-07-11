@@ -7,7 +7,8 @@ output: html_document
 # Draw the barplot of different OCR model
 
 ```{r}
-dataset <- read.csv("")
+dataset <- read.csv("OCR_data.xlsx")
+head(dataset)
 
 ```
 
