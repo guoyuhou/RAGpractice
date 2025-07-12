@@ -1,5 +1,7 @@
 #  Benchmarking Large Language Models in Retrieval-Augmented Generation
 
+*Address: https://ojs.aaai.org/index.php/AAAI/article/view/29728*
+
 ## 1. 这篇论文解决了什么问题？
 
 过去没有严格评估RAG的benchmark，因此这篇文章制作了从四个RAG的基本方面：noise rubustness, negative rejection, information integration and counterfactural robustness四个角度来测评

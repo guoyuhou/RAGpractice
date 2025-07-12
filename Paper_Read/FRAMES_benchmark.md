@@ -1,5 +1,7 @@
 # Fact, Fetch, and Reason: A Unified Evaluation of Retrieval-Augmented Generation
 
+*Address: https://arxiv.org/pdf/2409.12941*
+
 ## 1. 这篇论文解决了什么问题？
 
 过去的RAG评价标准往往是divided的，无法从整体上评估RAG性能。本文的数据集能够从整体的方面去评价RAG性能。并且在此benchmark上设立了base line，以及探索了未来RAG性能提升的方向。

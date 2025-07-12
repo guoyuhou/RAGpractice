@@ -1,6 +1,6 @@
 # When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation
 
-*原文地址：https://arxiv.org/html/2506.05690v1*
+*Address：https://arxiv.org/html/2506.05690v1*
 
 ## 1. 这篇论文解决了什么问题？
 

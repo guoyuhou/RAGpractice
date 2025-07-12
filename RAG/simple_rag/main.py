@@ -8,6 +8,8 @@ import pymupdf
 from google import genai
 from google.genai import types
 from openai import OpenAI
+import requests
+import json
 
 
 """
@@ -35,7 +37,28 @@ def extract_text(pdf):
             full_text += text
     return full_text
 
+# 1.2 OCRFlux-3B 替代pymupdf
 
+API_URL = 'http://172.16.120.14:8000/parse-pdf/'
+
+def extract_text_OCRFlux(pdf_path):
+    pay_load = {'pdf_path': pdf_path}
+
+    print(f'正在通过API请求处理文件:{pdf_path}')
+
+    try:
+        response = requests.post(API_URL, json=pay_load, timeout=300)
+
+        response.raise_for_status
+
+        data = response.json()
+
+        return data.get("markdown_content", '')
+    except requests.exceptions.RequestException as e:
+        print(f'调用API时发生错误:{e}')
+    except json.JSONDecodeError:
+        print(f'无法解析服务器返回的JSON响应:{response.text}')
+        return ''
 
 # 2. Divide the text into small chunks
 def divide_pdf_to_chunks(pdf_text):

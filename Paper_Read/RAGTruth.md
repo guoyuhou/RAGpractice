@@ -1,5 +1,7 @@
 # RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models
 
+*Address: https://arxiv.org/pdf/2401.00396*
+
 ## 笔记：
 
 ### 1. 幻觉检测的三种方法：

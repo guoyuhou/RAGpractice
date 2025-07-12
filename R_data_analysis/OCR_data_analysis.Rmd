@@ -7,8 +7,44 @@ output: html_document
 # Draw the barplot of different OCR model
 
 ```{r}
-dataset <- read.csv("OCR_data.xlsx")
-head(dataset)
+library(tidyverse)
+
+# 创建原始数据框 (Data Frame)
+df_raw <- tibble(
+  Model = c("MistralOCR-latest", "OCRFlux-3B", "Gemini-2.5-Pro"),
+  `OverallEdit↓(EN/ZH)` = c("0.255 / 0.407", "0.251 / 0.349", "0.148 / 0.212"),
+  `TextEdit↓(EN/ZH)` = c("0.057 / 0.271", "0.136 / 0.261", "0.055 / 0.168"),
+  `FormulaEdit↓(EN/ZH)` = c("0.316 / 0.481", "0.457 / 0.721", "0.356 / 0.439"),
+  `TableTEDS↑(EN/ZH)` = c("78.8 / 67.3", "71.3 / 81.7", "85.8 / 86.4"),
+  `TableEdit↓(EN/ZH)` = c("0.585 / 0.640", "0.252 / 0.142", "0.130 / 0.119"),
+  `ReadOrderEdit↓(EN/ZH)` = c("0.062 / 0.238", "0.161 / 0.273", "0.049 / 0.121")
+)
+
+# 数据清洗与重塑，将宽数据变为长数据，方便ggplot2作图
+df_long <- df_raw %>%
+  # 将所有指标列转换为长格式
+  pivot_longer(
+    cols = -Model, # 不转换Model列
+    names_to = "Metric",
+    values_to = "Scores"
+  ) %>%
+  # 将EN/ZH的分数拆分成两列
+  separate(Scores, into = c("EN", "ZH"), sep = " / ") %>%
+  # 再次转换为长格式，这次是按语言拆分
+  pivot_longer(
+    cols = c(EN, ZH),
+    names_to = "Language",
+    values_to = "Score"
+  ) %>%
+  # 转换分数为数值类型，并将无法转换的'-'变为NA
+  mutate(Score = as.numeric(Score)) %>%
+  # 去掉没有分数的行（比如FormulaCDM）
+  filter(!is.na(Score))
+
+# 查看处理好的数据结构
+print(head(df_long))
 
 ```
+
+
 
