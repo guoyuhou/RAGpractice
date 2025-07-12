@@ -56,6 +56,7 @@ def extract_text_OCRFlux(pdf_path):
         return data.get("markdown_content", '')
     except requests.exceptions.RequestException as e:
         print(f'调用API时发生错误:{e}')
+        return ''
     except json.JSONDecodeError:
         print(f'无法解析服务器返回的JSON响应:{response.text}')
         return ''
