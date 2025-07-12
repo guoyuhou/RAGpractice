@@ -10,6 +10,7 @@ import pymupdf
 from google import genai
 from google.genai import types
 from openai import OpenAI
+import requests
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(current_dir)
@@ -41,10 +42,11 @@ if st.button('处理PDF并进行RAG流程'):
         with st.spinner("Please wait......"):
             client = OpenAI(api_key=api_key_str,
                                   base_url="https://dashscope.aliyuncs.com/compatible-mode/v1")
-            pdf_bytes = upload_file.getvalue()
+            pdf_bytes = upload_file.getvalue()  
+            pdf_filename = upload_file.name
 
             st.write("The answer is :")
-            pdf_text = main.extract_text_OCRFlux(pdf_bytes)
+            pdf_text = main.extract_text_OCRFlux(pdf_bytes, pdf_filename)
             pdf_chunks = main.divide_pdf_to_chunks(pdf_text)
             chunks_embedding = main.vector_chunks_embedding(pdf_chunks, client)
             ans = main.semantic_search(client, query, pdf_chunks, chunks_embedding)

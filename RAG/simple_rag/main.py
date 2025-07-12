@@ -39,16 +39,18 @@ def extract_text(pdf):
 
 # 1.2 OCRFlux-3B 替代pymupdf
 
-API_URL = 'http://172.16.120.14:8000/parse-pdf/'
+API_UPLOAD_URL = 'http://172.16.120.14:8000/parse-pdf/'
 
-def extract_text_OCRFlux(pdf_path):
-    pay_load = {'pdf_path': pdf_path}
+def extract_text_OCRFlux(pdf_bytes: bytes, filename: str):
 
-    print(f'正在通过API请求处理文件:{pdf_path}')
+    print(f'正在通过API请求处理文件:{filename}')
 
     try:
-        response = requests.post(API_URL, json=pay_load, timeout=300)
+        files_payload = {
+            'file': (filename, pdf_bytes, 'application/pdf')
+        }
 
+        response = requests.post(API_UPLOAD_URL, files=files_payload, timeout=300)
         response.raise_for_status
 
         data = response.json()
