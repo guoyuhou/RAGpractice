@@ -1,0 +1,202 @@
+[
+    {
+        "question": "I am the narrator character in the final novel written by the recipient of the 1963 Hugo Award for Best Novel. Who am I?",
+        "standard_answer": "Angel Archer.",
+        "generated_answer_fix_size_150": "Jack Dowland",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "Angel Archer",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "Angel Archer",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of August 3, 2024, what is the capital of the country with the largest energy complex in South Eastern Europe?",
+        "standard_answer": "Sofia is the capital of Bulgaria, which is home to the largest energy complex in South Eastern Europe, the Maritsa Iztok Complex in Galabovo. ",
+        "generated_answer_fix_size_150": "Sofia",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "Sofia",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "Sofia",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Tell me the names of the two famous people I'm thinking of by using the following clues:  They both have the initials M.T. Both were known by nicknames that included the word \"Iron\" One became the world champion in his sport while the other was her country's political leader",
+        "standard_answer": "Mike Tyson and Margaret Thatcher",
+        "generated_answer_fix_size_150": "Michael Tyson, Margaret Thatcher",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "Mike Tyson and Margaret Thatcher",
+        "is_correct_recursive_150": true,
+        "generated_answer_semantic": "Mike Tyson and Margaret Thatcher",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "What two cities hosted the Summer Olympic Games between when the television shows featuring characters Olivia Benson and Meredith Grey started airing?",
+        "standard_answer": "Sydney, Australia, and Athens, Greece",
+        "generated_answer_fix_size_150": "Athens and Beijing",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "Athens and Beijing",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "Athens and Beijing",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Using only the Winter and Summer Olympic events that occurred in the same country in the same year, which year had the most total combined women competing in the olympics?",
+        "standard_answer": "1936",
+        "generated_answer_fix_size_150": "1988",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "1988",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "1936",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "Among Aristotle, Alexander the Great, Socrates, and Plato, which of them taught the others? What was their order chronologically? ",
+        "standard_answer": "Socrates taught Plato and Plato taught Aristotle. Aristotle taught Alexander the Great. So, chronologically, it was Socrates, Plato, Aristotle, and finally Alexander the Great. ",
+        "generated_answer_fix_size_150": "Socrates taught Plato, who then taught Aristotle.",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "Socrates, Plato, Aristotle",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "Socrates, Plato, Aristotle, Alexander the Great",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "The Sikh empire's capital at the time of the Battle of Sobraon came under the rule of the British Crown in what year?",
+        "standard_answer": "1858",
+        "generated_answer_fix_size_150": "1849",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "1849",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "1849",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "How many years before the founding of Google, was George Orwell's book \"1984\" published?",
+        "standard_answer": "49 years.",
+        "generated_answer_fix_size_150": "45",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "49",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "45",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Tell me the name of the place I am thinking of based on these clues:  - I am a metropolitan borough in the West Midlands, UK - I am not a city - My boroughs name does not relate to a town",
+        "standard_answer": "Sandwell.",
+        "generated_answer_fix_size_150": "Solihull",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "Sandwell",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "Sandwell",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Who was the Vice Admiral in charge of the Carrier Division the Japanese carrier Hiyō was in when she was sunk?",
+        "standard_answer": "Vice Admiral Kakuji Kakuta",
+        "generated_answer_fix_size_150": "Rear Admiral Munetaka Sakamaki",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "Rear Admiral Munetaka Sakamaki",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "Rear Admiral Munetaka Sakamaki",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "A 2002 science fiction novel by an American author references La Llorona and themes of personal identity. What is the name of the trilogy that this author wrote under the same publisher?",
+        "standard_answer": "The Sea of Trolls trilogy",
+        "generated_answer_fix_size_150": "The House of the Scorpion",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "信息不足，无法回答",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "信息不足，无法回答",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Who composed the Broadway musical that premiered in 2003 and starred the actress who would later voice Elsa in Disney's Frozen?",
+        "standard_answer": "Stephen Schwartz",
+        "generated_answer_fix_size_150": "Stephen Schwartz",
+        "is_correct_fix_size_150": true,
+        "generated_answer_recursive_150": "Stephen Schwartz",
+        "is_correct_recursive_150": true,
+        "generated_answer_semantic": "Stephen Schwartz",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "The founder of the production company at which Tim Allsop and Stewart Williams met received a bachelor's degree from a college in the state of New York. In what year was this college's sibling institution founded?",
+        "standard_answer": "1701",
+        "generated_answer_fix_size_150": "1701",
+        "is_correct_fix_size_150": true,
+        "generated_answer_recursive_150": "1701",
+        "is_correct_recursive_150": true,
+        "generated_answer_semantic": "1701",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "What Doctor Who episode aired on a date closest to the 441st launch of the Skylark rocket?",
+        "standard_answer": "Dalek",
+        "generated_answer_fix_size_150": "The Parting of the Ways",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "\"The Parting of the Ways\"",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "Rose",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of 2024, what is the street address of the headquarters of the American online video sharing platform that was launched in the same year as the founding of the Vancouver Cherry Blossom festival?",
+        "standard_answer": "901 Cherry Avenue, San Bruno, California, United States",
+        "generated_answer_fix_size_150": "信息不足，无法回答",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "San Bruno, California",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "San Bruno, California",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "What actor who starred in the People's Choice Award for Favorite Comedic Movie 1993 later became a U.S. President?",
+        "standard_answer": "The actor who starred in the People's Choice Award for Favorite Comedic Movie in 1993 who later became the 45th President of the United States, Donald Trump. ",
+        "generated_answer_fix_size_150": "Donald Trump",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "Donald Trump",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "Donald Trump",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Who was older, the guitar player for the Dugites from 1982-1983 or the lead singer of The Sports?",
+        "standard_answer": "Andrew Pendlebury",
+        "generated_answer_fix_size_150": "Stephen Cummings",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "Andrew Pendlebury",
+        "is_correct_recursive_150": true,
+        "generated_answer_semantic": "Ed Bates",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "How many more wins did the team with the number one seed from the NBA Western Conference in the 2020-2021 season have than the team with the fifth seed from the NBA Western Conference in the 2019-2020 season?",
+        "standard_answer": "8",
+        "generated_answer_fix_size_150": "信息不足，无法回答",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "信息不足，无法回答",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "信息不足，无法回答",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of August 1, 2024, are there any cities in England that are more populated than Philadelphia, and which cities are they?",
+        "standard_answer": "Yes, London",
+        "generated_answer_fix_size_150": "信息不足，无法回答",
+        "is_correct_fix_size_150": false,
+        "generated_answer_recursive_150": "信息不足，无法回答",
+        "is_correct_recursive_150": false,
+        "generated_answer_semantic": "信息不足，无法回答",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of Aug 3, 2024, the artist who released the album \"Father of Asahd\" went to the same high school as an Olympic diver. How many Olympic teams did this diver participate on?",
+        "standard_answer": "2",
+        "generated_answer_fix_size_150": "2",
+        "is_correct_fix_size_150": true,
+        "generated_answer_recursive_150": "2",
+        "is_correct_recursive_150": true,
+        "generated_answer_semantic": "2",
+        "is_correct_semantic": true
+    }
+]

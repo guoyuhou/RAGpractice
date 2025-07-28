@@ -1,0 +1,502 @@
+[
+    {
+        "question": "I am the narrator character in the final novel written by the recipient of the 1963 Hugo Award for Best Novel. Who am I?",
+        "standard_answer": "Angel Archer.",
+        "generated_answer_fix_size": "\n\nAngel Archer",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nAngel Archer",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nAngel Archer",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of August 3, 2024, what is the capital of the country with the largest energy complex in South Eastern Europe?",
+        "standard_answer": "Sofia is the capital of Bulgaria, which is home to the largest energy complex in South Eastern Europe, the Maritsa Iztok Complex in Galabovo. ",
+        "generated_answer_fix_size": "\n\nSofia",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nSofia",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nSofia.",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Tell me the names of the two famous people I'm thinking of by using the following clues:  They both have the initials M.T. Both were known by nicknames that included the word \"Iron\" One became the world champion in his sport while the other was her country's political leader",
+        "standard_answer": "Mike Tyson and Margaret Thatcher",
+        "generated_answer_fix_size": "\n\nMichael Tyson, Margaret Thatcher",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nMike Tyson and Margaret Thatcher.",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nMargaret Thatcher and Mike Tyson",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "What two cities hosted the Summer Olympic Games between when the television shows featuring characters Olivia Benson and Meredith Grey started airing?",
+        "standard_answer": "Sydney, Australia, and Athens, Greece",
+        "generated_answer_fix_size": "\n\nAthens",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nSydney and Athens.",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Using only the Winter and Summer Olympic events that occurred in the same country in the same year, which year had the most total combined women competing in the olympics?",
+        "standard_answer": "1936",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答。",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Among Aristotle, Alexander the Great, Socrates, and Plato, which of them taught the others? What was their order chronologically? ",
+        "standard_answer": "Socrates taught Plato and Plato taught Aristotle. Aristotle taught Alexander the Great. So, chronologically, it was Socrates, Plato, Aristotle, and finally Alexander the Great. ",
+        "generated_answer_fix_size": "\n\nAristotle taught Alexander the Great. Socrates taught Plato. Chronological order: Socrates → Plato → Aristotle → Alexander the Great.",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nSocrates taught Plato, Plato taught Aristotle, and Aristotle taught Alexander the Great. Chronological order: Socrates → Plato → Aristotle → Alexander the Great.",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nSocrates taught Plato; Plato taught Aristotle; Aristotle taught Alexander the Great. Chronological order: Socrates → Plato → Aristotle → Alexander the Great.",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "The Sikh empire's capital at the time of the Battle of Sobraon came under the rule of the British Crown in what year?",
+        "standard_answer": "1858",
+        "generated_answer_fix_size": "\n\n1849",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n1849",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n1858",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "How many years before the founding of Google, was George Orwell's book \"1984\" published?",
+        "standard_answer": "49 years.",
+        "generated_answer_fix_size": "\n\n49",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n49",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n49",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Tell me the name of the place I am thinking of based on these clues:  - I am a metropolitan borough in the West Midlands, UK - I am not a city - My boroughs name does not relate to a town",
+        "standard_answer": "Sandwell.",
+        "generated_answer_fix_size": "\n\nSandwell",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nSandwell",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nSandwell",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Who was the Vice Admiral in charge of the Carrier Division the Japanese carrier Hiyō was in when she was sunk?",
+        "standard_answer": "Vice Admiral Kakuji Kakuta",
+        "generated_answer_fix_size": "\n\nRear Admiral Munetaka Sakamaki",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答。",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nRear Admiral Munetaka Sakamaki",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "A 2002 science fiction novel by an American author references La Llorona and themes of personal identity. What is the name of the trilogy that this author wrote under the same publisher?",
+        "standard_answer": "The Sea of Trolls trilogy",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答。",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答。",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Who composed the Broadway musical that premiered in 2003 and starred the actress who would later voice Elsa in Disney's Frozen?",
+        "standard_answer": "Stephen Schwartz",
+        "generated_answer_fix_size": "\n\nStephen Schwartz",
+        "is_correct_fix_size": true,
+        "generated_answer_recursive": "\n\nStephen Schwartz",
+        "is_correct_recursive": true,
+        "generated_answer_semantic": "\n\nStephen Schwartz.",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "The founder of the production company at which Tim Allsop and Stewart Williams met received a bachelor's degree from a college in the state of New York. In what year was this college's sibling institution founded?",
+        "standard_answer": "1701",
+        "generated_answer_fix_size": "\n\n1701",
+        "is_correct_fix_size": true,
+        "generated_answer_recursive": "\n\n1701",
+        "is_correct_recursive": true,
+        "generated_answer_semantic": "\n\n1701",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "What Doctor Who episode aired on a date closest to the 441st launch of the Skylark rocket?",
+        "standard_answer": "Dalek",
+        "generated_answer_fix_size": "\n\n\"The Parting of the Ways\"",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n\"The Parting of the Ways\"",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n\"Dalek\"",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of 2024, what is the street address of the headquarters of the American online video sharing platform that was launched in the same year as the founding of the Vancouver Cherry Blossom festival?",
+        "standard_answer": "901 Cherry Avenue, San Bruno, California, United States",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答。",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "What actor who starred in the People's Choice Award for Favorite Comedic Movie 1993 later became a U.S. President?",
+        "standard_answer": "The actor who starred in the People's Choice Award for Favorite Comedic Movie in 1993 who later became the 45th President of the United States, Donald Trump. ",
+        "generated_answer_fix_size": "\n\nDonald Trump",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nDonald Trump",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nDonald Trump",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Who was older, the guitar player for the Dugites from 1982-1983 or the lead singer of The Sports?",
+        "standard_answer": "Andrew Pendlebury",
+        "generated_answer_fix_size": "\n\nAndrew Scott Pendlebury.",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答。",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "How many more wins did the team with the number one seed from the NBA Western Conference in the 2020-2021 season have than the team with the fifth seed from the NBA Western Conference in the 2019-2020 season?",
+        "standard_answer": "8",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答。",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答。",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of August 1, 2024, are there any cities in England that are more populated than Philadelphia, and which cities are they?",
+        "standard_answer": "Yes, London",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答。",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of Aug 3, 2024, the artist who released the album \"Father of Asahd\" went to the same high school as an Olympic diver. How many Olympic teams did this diver participate on?",
+        "standard_answer": "2",
+        "generated_answer_fix_size": "\n\n2",
+        "is_correct_fix_size": true,
+        "generated_answer_recursive": "\n\n2",
+        "is_correct_recursive": true,
+        "generated_answer_semantic": "\n\n信息不足，无法回答",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Of the Jason Statham movies that came out the year Dennis Hopper died, which could he have lived to see the premiere of?",
+        "standard_answer": "13",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答。",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答。",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of August 3rd, 2024, which Moose Jaw Warrior with a retired number was born on May 29, 1967?",
+        "standard_answer": "Mike Keane",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答。",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nMichael John Keane",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "The actress who played Aunt Rose in A Brooklyn State of Mind (1997) also starred in a mafia movie where she sang a popular Sicilian song. How many years later did her version of the song occur after the earliest recording?",
+        "standard_answer": "45 years",
+        "generated_answer_fix_size": "\n\n45",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n45",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n45",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of August 3, 2024, excluding white, what colour features on the flag of the city that houses the racecourse where Danon The Kid made his racing debut?",
+        "standard_answer": "Red",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答。",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答。",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "When was the last team that Miloš Beleslin played for dissolved?",
+        "standard_answer": "1945",
+        "generated_answer_fix_size": "\n\n1945.",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n1945",
+        "is_correct_recursive": true,
+        "generated_answer_semantic": "\n\n1945.",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Canadian politician Keir Clark attended a now defunct university college, which shut its doors in 1969. Who served as the first President of its successor institution?",
+        "standard_answer": "Ronald James Baker",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答。",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Based on the information available on Wikipedia on August 4, 2024 at 2:42 AM Greenwich Mean Time,  which of the following areas, Minamidaitōjima, Nuapada district, or Vostochnaya Niva has the highest population and how many more citizens does it contain than the other two provided cities?",
+        "standard_answer": "The Nuapada district contains 608,269 more people than the other two areas combined.",
+        "generated_answer_fix_size": "\n\nNuapada district, with 610,382 citizens, has 608,276 more than Minamidaitōjima (2,107) and 610,376 more than Vostochnaya Niva (6).",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nNuapada district has the highest population with 610,382 citizens. It has 608,275 more citizens than Minamidaitōjima (2,107) and 610,376 more than Vostochnaya Niva (6).",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nNuapada district has the highest population with 610,382 citizens, containing 608,275 more than Minamidaitōjima (2,107) and 610,376 more than Vostochnaya Niva (6).",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Of the top two most watched television season finales (as of June 2024), which finale ran the longest in length and by how much? ",
+        "standard_answer": "The MASH finale ran for 52 minutes longer than the Cheers finale.",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答。",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nM*A*S*H's finale (120 minutes) was 22 minutes longer than Cheers' (98 minutes).",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nM*A*S*H's \"Goodbye, Farewell and Amen\" ran 52 minutes longer than Cheers' \"One for the Road.\"",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Which political party held the most seats in the Leeds City Council election during the year that philosopher John Wall was born?",
+        "standard_answer": "Conservatives held the most seats in the Leeds City Council election in 1965 when John Wall was born.",
+        "generated_answer_fix_size": "\n\nConservative",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nConservative",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nConservative Party",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Which species from the genus mulona are both found in the same country?",
+        "standard_answer": "Mulona barnesi and mulona schausi",
+        "generated_answer_fix_size": "\n\nMulona barnesi and Mulona schausi.",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nMulona barnesi and Mulona schausi (Cuba).",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nMulona barnesi and Mulona grisea are both found in Cuba.",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "What primate species, known for its large population in China and presence in Florida, could potentially carry the Herpes B virus?",
+        "standard_answer": "Rhesus Macaques",
+        "generated_answer_fix_size": "\n\nRhesus macaques (Macaca mulatta)",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nRhesus macaque.",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nrhesus macaques",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "If you were to combine two words, the first of which has a species called Polytrichum piliferum, and the second which has a breed type called Fleckvieh, you'd get the name of what countries capital city?",
+        "standard_answer": "Russia",
+        "generated_answer_fix_size": "\n\nPort Moresby",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nMoscow",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n奥地利的维也纳（Vienna）",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "The quarterback who was selected first overall in the 1998 NFL draft, won the Superbowl with 2 different teams, both named after what type of animal?",
+        "standard_answer": "A horse",
+        "generated_answer_fix_size": "\n\nHorse",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nhorses",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n马",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "As of 1 August 2024, How many more seasons did Outrageous Fortune have compared to bro'Town?",
+        "standard_answer": "1",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答。",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n0",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n1",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "Which prime minister has been in office between 2017 and 2022 and also shares their middle name with a former monarch of Scotland.",
+        "standard_answer": "Theresa (Mary) May",
+        "generated_answer_fix_size": "\n\nTheresa May",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nTheresa May",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nTheresa May.",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "What is the birthday of the actor that portrayed the character David Cronenberg based on Marshall McLuhan?",
+        "standard_answer": "March 6, 1926",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答。",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nMarch 6, 1926",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "What is the etymology of the name of the province to the east of the province in which Hazrati Sultan District is located?",
+        "standard_answer": "The Dari name 'Baghlan' comes from the Bactrian 'Bagolango', meaning 'image-temple'",
+        "generated_answer_fix_size": "\n\nBaghlan is derived from Bagolango or \"image-temple\".",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nThe name Baghlan is derived from Bagolango or \"image-temple.\"",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nThe name Baghlan is derived from Bagolango or \"image-temple,\" inscribed on the temple of Surkh Kotal during the reign of the Kushan emperor Kanishka in the early 2nd century CE.",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Which president of the United States is represented by the sum of the ordinal numbers of the presidencies of the four men depicted on Mount Rushmore?",
+        "standard_answer": "Joe Biden",
+        "generated_answer_fix_size": "\n\nJoe Biden",
+        "is_correct_fix_size": true,
+        "generated_answer_recursive": "\n\n46",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\nJoe Biden",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "In which of the three Intertidal zones would you most likely find the Septifer bilocularis?",
+        "standard_answer": "Low Intertidal Zone",
+        "generated_answer_fix_size": "\n\nlow intertidal zone",
+        "is_correct_fix_size": true,
+        "generated_answer_recursive": "\n\nlow intertidal zone",
+        "is_correct_recursive": true,
+        "generated_answer_semantic": "\n\nLow intertidal zone.",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "How many years after Prohibition ended was Gone With The Wind released?",
+        "standard_answer": "6 years.",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n6",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n6",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Which fast food chain did the sponsor of the Women's 2018 Volleyball Thailand League acquire rights to in 1987?",
+        "standard_answer": "Kentucky Fried Chicken",
+        "generated_answer_fix_size": "\n\nKFC",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nKFC",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nKFC",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "What was the age difference between Mike Tyson and Tyson Fury on the respective days on which they lost their first ever fights? Represent the figure in years only.",
+        "standard_answer": "12 years.",
+        "generated_answer_fix_size": "\n\n12",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n12",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n12",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "How many New Zealanders have won Australian Idol during seasons 1 to 8?",
+        "standard_answer": "1",
+        "generated_answer_fix_size": "\n\n1",
+        "is_correct_fix_size": true,
+        "generated_answer_recursive": "\n\n1",
+        "is_correct_recursive": true,
+        "generated_answer_semantic": "\n\n2",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "The manga 'Sailor Moon' was authored by a woman. What manga did her husband win the Shogakukan Manga Award for authoring?",
+        "standard_answer": "YuYu Hakusho",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答。",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\nYuYu Hakusho",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "Who was the winner of Tour de France the same year that a major catastrophic crash happened at Circuit de la Sarthe in Le Mans, France?",
+        "standard_answer": "Louison Bobet",
+        "generated_answer_fix_size": "\n\nLouison Bobet",
+        "is_correct_fix_size": true,
+        "generated_answer_recursive": "\n\nLouison Bobet",
+        "is_correct_recursive": true,
+        "generated_answer_semantic": "\n\nLouison Bobet",
+        "is_correct_semantic": true
+    },
+    {
+        "question": "How old would James Logan have been when the estate of his descendent donated Neshaminy State Park land to the Commonwealth of Pennsylvania?",
+        "standard_answer": "282 years",
+        "generated_answer_fix_size": "\n\n282",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n282",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "Which 2024 college/university president has a degree from Harvard University: the president from the one that organizes the Miami Book Fair or from the one that organizes the Kentucky Women Writers Conference?",
+        "standard_answer": "Eli Capilouto",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nEli Capilouto from the University of Kentucky (organizes the Kentucky Women Writers Conference).",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答。",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "What state is the home of the losing team of the World Series three years before \"Old Shufflefoot\" managed his team to victory? ",
+        "standard_answer": "Illinois",
+        "generated_answer_fix_size": "\n\nIllinois",
+        "is_correct_fix_size": true,
+        "generated_answer_recursive": "\n\nIllinois",
+        "is_correct_recursive": true,
+        "generated_answer_semantic": "\n\nIllinois.",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "In the season before Jamal Murray won the NBA Championship, who was the fourth overall draft pick?",
+        "standard_answer": "Scottie Barnes",
+        "generated_answer_fix_size": "\n\n信息不足，无法回答。",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\n信息不足，无法回答。",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答。",
+        "is_correct_semantic": false
+    },
+    {
+        "question": "What was the difference in receiving yards from 2022 and 2023 for number 11 on the 49ers? Calculate the same 2022/2023 difference for the closest ranked WR for number 11's draft class and compare their numbers.",
+        "standard_answer": "The yard difference for Brandon Aiyuk is 327. The yard difference for Justin Jefferson is -735. Brandon improved more in 2023 but Justin's 2022 numbers were astronomical.",
+        "generated_answer_fix_size": "\n\nBrandon Aiyuk's difference: +327 yards (1,342 in 2023 vs. 1,015 in 2022). Information insufficient to determine closest 2020 WR draft class comparison.",
+        "is_correct_fix_size": false,
+        "generated_answer_recursive": "\n\nBrandon Aiyuk: 2022 (1,015) vs. 2023 (1,342) = +327. Justin Jefferson (2020 draft): 2022 (1,809) vs. 2023 (1,616) = -193. Aiyuk improved by 327 yards; Jefferson declined by 193.",
+        "is_correct_recursive": false,
+        "generated_answer_semantic": "\n\n信息不足，无法回答。",
+        "is_correct_semantic": false
+    }
+]

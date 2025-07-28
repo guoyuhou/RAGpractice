@@ -1,0 +1,239 @@
+```{r}
+# OCRBench: 
+# 1. 安装并加载必要的R包 (如果尚未安装)
+# install.packages("ggplot2")
+# install.packages("dplyr")
+
+library(ggplot2)
+library(dplyr)
+
+# 2. 准备数据
+# 我们将论文中的数据和您的结果整理到一个数据框(data frame)中
+# 为了突出对比，我们选取Naive Prompt和BM25-R(n_doc=4)作为基准
+data <- data.frame(
+  system = c(
+    "Gemini-1.5-Pro (Naive)", 
+    "Gemini-1.5-Pro (BM25 RAG)", 
+    "Gemini-1.5-Flash (Naive)", 
+    "Gemini-1.5-Flash (BM25 RAG)",
+    "我们的RAG系统"
+  ),
+  accuracy = c(0.408, 0.474, 0.263, 0.315, 0.560),
+  type = c(
+    "基准模型 (无检索)", 
+    "基准模型 (BM25检索)", 
+    "基准模型 (无检索)", 
+    "基准模型 (BM25检索)",
+    "我们的RAG系统"
+  )
+)
+
+# 3. 为了让图表看起来更清晰，我们按照准确率对 system 进行排序
+data$system <- factor(data$system, levels = data$system[order(data$accuracy)])
+
+# 4. 使用ggplot2创建图表
+ggplot(data, aes(x = system, y = accuracy, fill = type)) +
+  geom_bar(stat = "identity", width = 0.7) + # 创建条形图
+  geom_text(aes(label = paste0(round(accuracy * 100, 1), "%")), vjust = -0.5, size = 4, color = "black") + # 在条形图上添加百分比标签
+  
+  # 5. 自定义颜色，突出我们的系统
+  scale_fill_manual(values = c(
+    "基准模型 (无检索)" = "#a9a9a9", # 暗灰色
+    "基准模型 (BM25检索)" = "#6495ed", # 矢车菊蓝
+    "我们的RAG系统" = "#ff8c00"  # 亮橙色
+  )) +
+  
+  # 6. 添加标题和标签
+  labs(
+    title = "RAG系统性能对比：我们的系统 vs. Gemini基准",
+    subtitle = "在FRAMES评测集上的准确率（越高越好）",
+    x = "评测方案",
+    y = "准确率 (Accuracy)",
+    fill = "系统类型" # 图例标题
+  ) +
+  
+  # 7. 美化主题和样式
+  theme_minimal(base_size = 14) + # 使用简洁主题
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"), # 标题居中加粗
+    plot.subtitle = element_text(hjust = 0.5), # 副标题居中z
+    axis.text.x = element_text(angle = 45, hjust = 1), # X轴标签倾斜45度，防止重叠
+    legend.position = "top" # 将图例放在顶部
+  ) +
+  
+  # 8. Y轴设置为百分比格式
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1), limits = c(0, 0.8))
+```
+
+# Chunking: 
+```{r}
+# 1. 加载必要的R包
+library(ggplot2)
+library(dplyr)
+
+# 2. 准备实验一的数据
+chunking_data <- tibble(
+  method = c("Fixed-Size", "Recursive", "Semantic"),
+  accuracy = c(0.56, 0.58, 0.64)
+)
+
+# 3. 为了让图表看起来更清晰，我们按照准确率对 method 进行排序
+chunking_data$method <- factor(chunking_data$method, levels = chunking_data$method[order(chunking_data$accuracy)])
+
+# 4. 使用ggplot2创建图表
+ggplot(chunking_data, aes(x = method, y = accuracy, fill = method)) +
+  geom_bar(stat = "identity", width = 0.6, show.legend = FALSE) + # 不显示图例
+  geom_text(aes(label = scales::percent(accuracy, accuracy = 1)), vjust = -0.5, size = 5, fontface = "bold") +
+  
+  # 使用一个美观的连续调色板
+  scale_fill_brewer(palette = "Oranges", direction = 1) +
+  
+  # 添加标题和标签
+  labs(
+    title = "实验一：不同分块策略性能对比",
+    subtitle = "固定使用Dense Retrieval，在FRAMES数据集上的准确率",
+    x = "分块方法 (Chunking Method)",
+    y = "准确率 (Accuracy)"
+  ) +
+  
+  # 美化主题
+  theme_minimal(base_size = 15) +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 20),
+    plot.subtitle = element_text(hjust = 0.5, color = "gray30"),
+    axis.title.y = element_text(face = "bold", margin = margin(r = 10)),
+    axis.title.x = element_text(face = "bold", margin = margin(t = 10)),
+    panel.grid.major.x = element_blank()
+  ) +
+  
+  # Y轴设置为百分比格式
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1), limits = c(0, 0.8))
+```
+# Retrieval
+```{r}
+# 1. 加载库
+library(ggplot2)
+library(dplyr)
+
+# 2. 准备数据 (包含G-Flash-1.5)
+retrieval_data <- tibble(
+  method = c(
+    "Naive Prompt", "Naive Prompt",
+    "BM25 RAG (n=4)", "BM25 RAG (n=4)",
+    "Our Sparse RAG",
+    "Our Dense RAG",
+    "Our Hybrid RAG",
+    "Our Hybrid + Rerank",
+    "Oracle Prompt", "Oracle Prompt"
+  ),
+  model = c(
+    "G-Pro-1.5", "G-Flash-1.5",
+    "G-Pro-1.5", "G-Flash-1.5",
+    "我们的系统",
+    "我们的系统",
+    "我们的系统",
+    "我们的系统",
+    "G-Pro-1.5", "G-Flash-1.5"
+  ),
+  accuracy = c(
+    0.408, 0.263,
+    0.474, 0.315,
+    0.52,
+    0.56,
+    0.60,
+    0.62,
+    0.729, 0.665
+  )
+)
+
+# 3. 设定X轴的显示顺序
+method_order <- c(
+  "Naive Prompt", 
+  "BM25 RAG (n=4)", 
+  "Our Sparse RAG",
+  "Our Dense RAG",
+  "Our Hybrid RAG",
+  "Our Hybrid + Rerank",
+  "Oracle Prompt"
+)
+retrieval_data$method <- factor(retrieval_data$method, levels = method_order)
+
+# 4. [新增] 创建一个专业的主题，以便复用
+theme_professional <- function() {
+  theme_minimal(base_size = 15) +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 24, margin = margin(b=5)),
+    plot.subtitle = element_text(hjust = 0.5, color = "gray30", size = 16, margin = margin(b=25)),
+    axis.title.y = element_text(face = "bold", size = 16, angle = 90),
+    axis.title.x = element_text(face = "bold", size = 16, margin = margin(t=10)),
+    axis.text = element_text(face = "bold", size=12),
+    axis.text.x = element_text(angle = 30, hjust = 1),
+    legend.position = "top",
+    legend.title = element_text(face="bold", size=14),
+    legend.text = element_text(size=12),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.y = element_line(color = "gray85", linetype = "dashed")
+  )
+}
+
+# 5. 绘制图表
+ggplot(retrieval_data, aes(x = method, y = accuracy, fill = model)) +
+  # [修改] 调整柱子宽度和并排间距
+  geom_col(position = position_dodge(width = 0.9), width = 0.7) +
+  
+  # 添加百分比标签
+  geom_text(
+    aes(label = scales::percent(accuracy, accuracy = 0.1)), 
+    position = position_dodge(width = 0.8),
+    vjust = -0.4, 
+    size = 4.5, 
+    fontface = "bold"
+  ) +
+  
+  # 使用您范例中的颜色
+  scale_fill_manual(
+    name = "系统类型",
+    values = c(
+      "G-Pro-1.5"   = "#005a9e",  # 深蓝色
+      "G-Flash-1.5" = "#87CEEB",  # 浅蓝色
+      "我们的系统"  = "#f47d20"   # 橙色
+    )
+  ) +
+  
+  # 设置标题和标签
+  labs(
+    title = "RAG检索策略性能对比分析",
+    subtitle = "固定Fix-Size Chunking | 在FRAMES数据集上的准确率",
+    x = "检索策略 (Retrieval Strategy)",
+    y = "准确率 (Accuracy)"
+  ) +
+  
+  # Y轴设置
+  scale_y_continuous(
+    labels = scales::percent_format(accuracy = 1), 
+    limits = c(0, 0.85),
+    expand = c(0, 0) # 让柱子从0开始
+  ) +
+  
+  # 应用我们定义好的专业主题
+  theme_professional()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

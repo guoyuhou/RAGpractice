@@ -1,0 +1,122 @@
+[
+    {
+        "question": "I am the narrator character in the final novel written by the recipient of the 1963 Hugo Award for Best Novel. Who am I?",
+        "standard_answer": "Angel Archer.",
+        "generated_answer": "The recipient of the 1963 Hugo Award for Best Novel is Philip K. Dick, for *The Man in the High Castle*. His final novel, *The Transmigration of Timothy Archer*, was published shortly after his death in 1982.\n\nAccording to the given context: \"While Dick's novels usually employ multiple narrators or an omniscient perspective, this story is told in the first person by a single narrator: Angel Archer, Bishop Archer's daughter-in-law.\"\n\nTherefore, based on the information provided, **you are Angel Archer**, the narrator of *The Transmigration of Timothy Archer*.",
+        "is_correct": false
+    },
+    {
+        "question": "As of August 3, 2024, what is the capital of the country with the largest energy complex in South Eastern Europe?",
+        "standard_answer": "Sofia is the capital of Bulgaria, which is home to the largest energy complex in South Eastern Europe, the Maritsa Iztok Complex in Galabovo. ",
+        "generated_answer": "The capital of the country with the largest energy complex in South Eastern Europe is Sofia.\n\nThe provided text states that the Maritsa Iztok-2 station is the largest thermal power plant in the Balkans and is located in Bulgaria. It also mentions that Sofia is the nation's capital and largest city. Therefore, since Bulgaria is in Southeastern Europe and contains the Maritsa Iztok-2 energy complex, its capital, Sofia, is the correct answer.",
+        "is_correct": false
+    },
+    {
+        "question": "Tell me the names of the two famous people I'm thinking of by using the following clues:  They both have the initials M.T. Both were known by nicknames that included the word \"Iron\" One became the world champion in his sport while the other was her country's political leader",
+        "standard_answer": "Mike Tyson and Margaret Thatcher",
+        "generated_answer": "Based on the clues provided:\n\n1. **Initials M.T.**\n2. **Nicknames included the word \"Iron\"**\n3. **One became the world champion in his sport, while the other was her country's political leader**\n\nThe two famous people you're referring to are:\n\n- **Mike Tyson** – Known as \"Iron Mike,\" he became the world heavyweight boxing champion.\n- **Margaret Thatcher** – Nicknamed the \"Iron Lady,\" she was the Prime Minister of the United Kingdom. \n\nThese two individuals match all the given clues.",
+        "is_correct": false
+    },
+    {
+        "question": "What two cities hosted the Summer Olympic Games between when the television shows featuring characters Olivia Benson and Meredith Grey started airing?",
+        "standard_answer": "Sydney, Australia, and Athens, Greece",
+        "generated_answer": "To answer the question, we need to determine the time frame when the television shows featuring the characters Olivia Benson and Meredith Grey started airing and then identify the cities that hosted the Summer Olympic Games during that period.\n\n1. **Grey's Anatomy** (featuring Meredith Grey) premiered on March 27, 2005.\n2. **Law & Order: Special Victims Unit** (featuring Olivia Benson) began airing in 1999.\n\nSo, we are looking for the Summer Olympic Games hosted between 1999 and 2005.\n\nFrom the provided context:\n- **2004 Summer Olympics** were hosted by **Athens**.\n- **2000 Summer Olympics** were hosted by **Sydney**.\n\nTherefore, the two cities that hosted the Summer Olympic Games between when the shows featuring Olivia Benson and Meredith Grey started airing are:\n\n1. **Sydney (2000)**  \n2. **Athens (2004)**",
+        "is_correct": false
+    },
+    {
+        "question": "Using only the Winter and Summer Olympic events that occurred in the same country in the same year, which year had the most total combined women competing in the olympics?",
+        "standard_answer": "1936",
+        "generated_answer": "The passage indicates that the Summer and Winter Olympics were held in the same country in the same year only before 1992, with the last such occurrence being in 1992. It also states that women first participated officially in the 1900 Paris Games, with 22 women competing in five sports. However, the passage does not provide the exact number of women competing in the Olympics in the same year and country for other years.\n\nSince the necessary data to compare the total combined number of women competing in both the Summer and Winter Olympics for the same country and year is not provided in the passage, I cannot determine which year had the most total combined women competitors.\n\nI do not have enough information to answer this question fully.",
+        "is_correct": false
+    },
+    {
+        "question": "Among Aristotle, Alexander the Great, Socrates, and Plato, which of them taught the others? What was their order chronologically? ",
+        "standard_answer": "Socrates taught Plato and Plato taught Aristotle. Aristotle taught Alexander the Great. So, chronologically, it was Socrates, Plato, Aristotle, and finally Alexander the Great. ",
+        "generated_answer": "From the provided text, we can infer the following relationships and chronological order:\n\n1. **Socrates** was the teacher of **Plato**.\n2. **Plato** was the teacher of **Aristotle**.\n3. **Aristotle** became the tutor of **Alexander the Great**.\n\nSo, the chronological teaching order is:\n- **Socrates** taught **Plato**.\n- **Plato** taught **Aristotle**.\n- **Aristotle** taught **Alexander the Great**.\n\nThis establishes a clear lineage: Socrates → Plato → Aristotle → Alexander the Great.",
+        "is_correct": false
+    },
+    {
+        "question": "The Sikh empire's capital at the time of the Battle of Sobraon came under the rule of the British Crown in what year?",
+        "standard_answer": "1858",
+        "generated_answer": "The Sikh Empire's capital, Lahore, came under the rule of the British Crown in 1849. This is confirmed by the text stating, \"Lahore was annexed to the British Raj in 1849 and became the capital of British Punjab,\" and \"On 2 April 1849... the East India Company... annexed the Punjab... and incorporated it within British India.\" Therefore, the correct year is:\n\n**1849**.",
+        "is_correct": false
+    },
+    {
+        "question": "How many years before the founding of Google, was George Orwell's book \"1984\" published?",
+        "standard_answer": "49 years.",
+        "generated_answer": "To calculate how many years before the founding of Google George Orwell's book \"1984\" was published:\n\n1. **Publication year of \"1984\":** The book was published on **8 June 1949**.\n\n2. **Founding year of Google:** Google began as a research project in **January 1996**.\n\n3. **Difference in years:**\n   - From 1949 to 1996 is a difference of **47 years**.\n\nTherefore, George Orwell's book \"1984\" was published **47 years** before the founding of Google.",
+        "is_correct": false
+    },
+    {
+        "question": "Tell me the name of the place I am thinking of based on these clues:  - I am a metropolitan borough in the West Midlands, UK - I am not a city - My boroughs name does not relate to a town",
+        "standard_answer": "Sandwell.",
+        "generated_answer": "Based on the clues provided, the place you are thinking of is **Sandwell**. \n\n- Sandwell is a metropolitan borough in the West Midlands, UK.\n- It is not a city.\n- The name of the borough does not relate to a town; instead, it is named after the Sandwell Priory.",
+        "is_correct": false
+    },
+    {
+        "question": "Who was the Vice Admiral in charge of the Carrier Division the Japanese carrier Hiyō was in when she was sunk?",
+        "standard_answer": "Vice Admiral Kakuji Kakuta",
+        "generated_answer": "The Japanese carrier Hiyō was part of the Second Carrier Division when she was sunk. At that time, the Second Carrier Division was under the command of Rear Admiral Munetaka Sakamaki. Therefore, the Vice Admiral in charge of the Carrier Division Hiyō belonged to would be the higher-ranking officer overseeing the division, but based on the provided context, only Rear Admiral Munetaka Sakamaki is directly mentioned as leading the Second Carrier Division. \n\nAnswer: Rear Admiral Munetaka Sakamaki.",
+        "is_correct": false
+    },
+    {
+        "question": "A 2002 science fiction novel by an American author references La Llorona and themes of personal identity. What is the name of the trilogy that this author wrote under the same publisher?",
+        "standard_answer": "The Sea of Trolls trilogy",
+        "generated_answer": "I do not have enough information to identify the specific trilogy you are referring to. The House of the Scorpion, the 2002 science fiction novel by Nancy Farmer that references La Llorona and themes of personal identity, is a standalone novel, not part of a trilogy. If you are referring to another work or trilogy by Nancy Farmer or a different author, more details would be needed to provide an accurate answer. \n\nTherefore, based on the given context:  \n**I do not have enough information to answer the question.**",
+        "is_correct": false
+    },
+    {
+        "question": "Who composed the Broadway musical that premiered in 2003 and starred the actress who would later voice Elsa in Disney's Frozen?",
+        "standard_answer": "Stephen Schwartz",
+        "generated_answer": "The Broadway musical that premiered in 2003 and starred Idina Menzel, the actress who later voiced Elsa in Disney's Frozen, was composed by Stephen Schwartz. The musical is titled *Wicked*.",
+        "is_correct": false
+    },
+    {
+        "question": "The founder of the production company at which Tim Allsop and Stewart Williams met received a bachelor's degree from a college in the state of New York. In what year was this college's sibling institution founded?",
+        "standard_answer": "1701",
+        "generated_answer": "To answer this question, let's break it down step by step using the provided context:\n\n1. **Tim Allsop and Stewart Williams** are described as a British writing and directing duo. It is also mentioned that they met in 2005 while working for **Elisabeth Murdoch's production company Shine Limited**.\n\n2. **Elisabeth Murdoch** is noted to have graduated with a bachelor's degree from **Vassar College** in Poughkeepsie, New York. This establishes that the production company in question is **Shine Limited**, and its founder, **Elisabeth Murdoch**, received her bachelor's degree from Vassar College.\n\n3. **Vassar College** is mentioned to have been founded in **1861** by Matthew Vassar.\n\n4. The text also states that **Yale University** is Vassar's sibling institution. This is further supported by the line: \"Vassar, then all-female and part of the Seven Sisters—elite higher education schools that served as sister institutions to the Ivy League when nearly all Ivy League institutions still only admitted men—tentatively accepted, but then declined the invitation [to merge with Yale].\"\n\n5. **Yale University** is explicitly stated to have been founded in **1701**.\n\n### Final Answer:\nThe sibling institution of Vassar College, Yale University, was founded in **1701**.",
+        "is_correct": false
+    },
+    {
+        "question": "What Doctor Who episode aired on a date closest to the 441st launch of the Skylark rocket?",
+        "standard_answer": "Dalek",
+        "generated_answer": "The 441st and final launch of the Skylark rocket took place on **2 May 2005**.\n\nThe **first series** of the 2005 revival of *Doctor Who* began on **26 March 2005** with the episode **\"Rose\"**, and aired weekly thereafter.\n\nThe episode that aired **closest** to **2 May 2005** would be:\n\n- **\"The End of the World\"**, which aired on **2 April 2005**.\n\nThis is **31 days before** the Skylark launch, making it the *Doctor Who* episode that aired nearest in time to the 441st Skylark launch.\n\n**Answer: \"The End of the World\"**",
+        "is_correct": false
+    },
+    {
+        "question": "As of 2024, what is the street address of the headquarters of the American online video sharing platform that was launched in the same year as the founding of the Vancouver Cherry Blossom festival?",
+        "standard_answer": "901 Cherry Avenue, San Bruno, California, United States",
+        "generated_answer": "I do not have enough information to answer this question.",
+        "is_correct": false
+    },
+    {
+        "question": "What actor who starred in the People's Choice Award for Favorite Comedic Movie 1993 later became a U.S. President?",
+        "standard_answer": "The actor who starred in the People's Choice Award for Favorite Comedic Movie in 1993 who later became the 45th President of the United States, Donald Trump. ",
+        "generated_answer": "I don't have enough information to answer this question.",
+        "is_correct": false
+    },
+    {
+        "question": "Who was older, the guitar player for the Dugites from 1982-1983 or the lead singer of The Sports?",
+        "standard_answer": "Andrew Pendlebury",
+        "generated_answer": "I cannot determine who was older between the guitar player for the Dugites from 1982–1983 (Andrew Pendlebury) and the lead singer of The Sports (Stephen Cummings) based on the provided information. The text does not include their exact birth dates or ages.",
+        "is_correct": false
+    },
+    {
+        "question": "How many more wins did the team with the number one seed from the NBA Western Conference in the 2020-2021 season have than the team with the fifth seed from the NBA Western Conference in the 2019-2020 season?",
+        "standard_answer": "8",
+        "generated_answer": "我没有足够的信息来回答这个问题。",
+        "is_correct": false
+    },
+    {
+        "question": "As of August 1, 2024, are there any cities in England that are more populated than Philadelphia, and which cities are they?",
+        "standard_answer": "Yes, London",
+        "generated_answer": "I do not have specific population figures for cities in England as of August 1, 2024, nor does the provided context contain this information. Therefore, I cannot determine if any cities in England are more populated than Philadelphia as of that date. \n\n我没有足够的信息来回答这个问题。",
+        "is_correct": false
+    },
+    {
+        "question": "As of Aug 3, 2024, the artist who released the album \"Father of Asahd\" went to the same high school as an Olympic diver. How many Olympic teams did this diver participate on?",
+        "standard_answer": "2",
+        "generated_answer": "The artist who released the album \"Father of Asahd\" is DJ Khaled. According to the provided information, DJ Khaled attended the same high school as Mark Ruiz, an Olympic diver from Puerto Rico.\n\nMark Ruiz represented the United States in the 2000 Olympic Games and the 2004 Olympic Games. Therefore, the Olympic diver participated on **two Olympic teams**. \n\nAnswer: **2**.",
+        "is_correct": false
+    }
+]
